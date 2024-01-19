@@ -6,20 +6,27 @@ import user_icon from '../Assets/person.png'
 import email_icon from '../Assets/email.png'
 import password_icon from '../Assets/password.png'
 import logo_icon from '../Assets/logo.png'
-//import login_icon from '../Assets/login.png'
+import user_image from '../Assets/user.png';
+
 
 
 // SIGN UP SIGN IN SECTION 
 const SignInSignUp = () => {
     const [action,setAction] = useState("Sign In");
   return (
-<div className=" parent-container">
-    
-        <div className='logo-container'>
-          <img src={logo_icon} alt='Logo' className='logo' />
+
+    <div className="parent-container">
+
+       <div className="navbar">
+        <img src={logo_icon} alt='Logo' className='logo' />
+        <div className="nav-home">Home</div>
+        <div className="nav-lib">Library</div>
+        <div className="nav-user">
+          <img src={user_image} alt='User' className='user-icon' />
         </div>
+      </div>
     
-      <div className='container'>
+      <div className='sign-container'>
         <div className="header">
           <div className="text">{action}</div>
           <div className="underline"></div>
