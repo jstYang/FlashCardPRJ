@@ -41,8 +41,8 @@ const SignInSignUp = () => {
           </div>}
           
           <div className="input">
-            <img src={email_icon} alt="" />
-            <input type="email" placeholder="Email"/>
+            <img src={user_icon} alt="" />
+            <input type="Username" placeholder="Username"/>
           </div>
 
           <div className="input">
