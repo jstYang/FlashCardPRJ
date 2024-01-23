@@ -28,6 +28,11 @@
   color: #ffffff;
 }
 
+.sidebar-icon-bar li{
+  text-decoration: none;
+  list-style: none;
+}
+
 .sidebar-title {
   font-family: "Roboto", sans-serif;
   font-size: 24px;

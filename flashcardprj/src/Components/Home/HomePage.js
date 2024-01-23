@@ -4,6 +4,7 @@ import { BsCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
 import Footer from "../sidebar/Footer";
 import "./HomePage.css";
 
+
 export default function HomePage({
   quizMode,
   selectedDeck,
