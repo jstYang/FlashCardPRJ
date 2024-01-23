@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import QuizCard from "../cards/QuizCard";
 import { BsCaretLeftFill, BsFillCaretRightFill } from "react-icons/bs";
-import { FaRegSmileBeam, FaRegFrown } from "react-icons/fa";
 import Footer from "../sidebar/Footer";
 import "./HomePage.css";
 
@@ -12,10 +11,6 @@ export default function HomePage({
   setQuestionNumber,
   cardSide,
   setCardSide,
-  knowItCards,
-  setKnowItCards,
-  dontKnowItCards,
-  setDontKnowItCards,
 }) {
   const [ isFinished, setIsFinished ] = useState(false);
   const [ finishTest, setFinishTest ] = useState(false);

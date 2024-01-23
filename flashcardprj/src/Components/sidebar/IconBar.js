@@ -1,23 +1,27 @@
-import { RiMenuLine, RiHome4Line, RiBook2Line } from "react-icons/ri";
-import { GiMagnifyingGlass, GiStack } from "react-icons/gi";
-import { ImLab } from "react-icons/im";
-import { HiPhotograph } from "react-icons/hi";
+import { RiHome4Line } from "react-icons/ri";
+import { HiMiniUserCircle } from "react-icons/hi2";
+import { SlPlus } from "react-icons/sl";
+import { TfiAlarmClock } from "react-icons/tfi";
 
 export default function IconBar({ setQuizMode, setAddQuestionsView }) {
   return (
+
+    
     <div className="sidebar-icon-bar">
-      <RiHome4Line
-        className="sidebar-icon"
-        onClick={() => {
+   
+       <RiHome4Line className="sidebar-icon" onclick={() => {
+         setQuizMode(false);
+          setAddQuestionsView(false);
+      }} />
+
+      <SlPlus className="sidebar-icon" onClick={() => {
           setQuizMode(false);
           setAddQuestionsView(false);
-        }}
-      />
-      <RiMenuLine className="sidebar-icon" />
-      <GiMagnifyingGlass className="sidebar-icon" />
-      <RiBook2Line className="sidebar-icon" />
-      <ImLab className="sidebar-icon" />
-      <HiPhotograph className="sidebar-icon" />
+      }} />
+  
+      <TfiAlarmClock className="sidebar-icon" />
+      <HiMiniUserCircle className="sidebar-icon" />
+      
       
     </div>
   );

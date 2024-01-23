@@ -74,7 +74,7 @@
   flex-direction: column;
   width: 600px;
   height: 400px;
-  background-color: rgb(233, 233, 233);
+  background-color: #273258;
   margin: 1em;
   border-radius: 24px;
   justify-content: space-between;
@@ -92,12 +92,14 @@
 
 .quiz-card-content {
   font-size: 36px;
+  color: white;
 }
 
 .flip-card-button {
   height: 2em;
   width: 2em;
   cursor: pointer;
+  color: white;
 }
 
 .edit-card-buttons {

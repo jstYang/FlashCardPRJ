@@ -10,8 +10,7 @@ function Main() {
   const [quizMode, setQuizMode] = useState(false);
   const [questionNumber, setQuestionNumber] = useState(0);
   const [cardSide, setCardSide] = useState("front");
-  const [knowItCards, setKnowItCards] = useState([]);
-  const [dontKnowItCards, setDontKnowItCards] = useState([]);
+
 
   // retrieves persisted decks through local storage
   useEffect(() => {
@@ -141,10 +140,7 @@ function Main() {
         cardSide={cardSide}
         setCardSide={setCardSide}
         deleteCard={deleteCard}
-        knowItCards={knowItCards}
-        setKnowItCards={setKnowItCards}
-        dontKnowItCards={dontKnowItCards}
-        setDontKnowItCards={setDontKnowItCards}
+       
       />
     </div>
   );
