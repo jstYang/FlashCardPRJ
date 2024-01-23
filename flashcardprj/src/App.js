@@ -1,10 +1,10 @@
 import './App.css';
-import SignInSignUp from './Components/SignUpSignIn/SignInSignUp';
+import Main from './Components/main'
 
 function App() {
   return (
     <div >
-     <SignInSignUp/>
+      <Main />
     </div>
   );
 }
