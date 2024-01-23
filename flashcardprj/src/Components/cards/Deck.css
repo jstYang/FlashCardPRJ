@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 .deck {
-  background: #273258;;
+  background:white;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -18,14 +18,14 @@
 
 .deck-title {
   width: 90%;
-  color: white;
+  color:black;
 }
 
 .add-cards-button {
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
-  color:white;
+  color:black;
   width: 30%;
 }
 
@@ -43,13 +43,14 @@
 
 .remove-deck-button {
   cursor: pointer;
-  color: white;
+  
 }
 
 .view-deck-button {
   cursor: pointer;
-  color: white;
+  color: black;
 }
+
 
 .deck-buttons {
   width: 90%;
