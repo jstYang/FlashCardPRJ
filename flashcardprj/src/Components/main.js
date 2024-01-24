@@ -84,7 +84,7 @@ function Main() {
   //Updates the selected card to user inputs
   const updateCard = (index, front, back) => {
     const newCardData = { front: front, back: back };
-    axios.post("http://localhost:8081/card", front,back)
+    axios.post("http://localhost:8081/cards", front,back)
     .then(res => console.log(res))
     .catch(err => console.log(err))
     const cardList = [...selectedDeck.content];

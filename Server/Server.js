@@ -24,12 +24,12 @@ db.connect((err) => {
 
 app.post('/cards', (req, res) => {
   const cardNumber = req.body.cardNumber;
-  const front = req.body.front;
-  const back = req.body.back;
+  const cardFront = req.body.front;
+  const cardBack = req.body.back;
 
 
-  const sql = 'INSERT INTO cards (id,front, back) VALUES (?, ?, ?)';
-  db.query(sql, [cardFront, cardBack], (err, result) => {
+  const sql = 'INSERT INTO cards (id,question, answer) VALUES (?, ?, ?)';
+  db.query(sql, [cardNumber,cardFront, cardBack], (err, result) => {
     if (err) {
       console.error('Error inserting into database:', err);
       res.status(500).send('Internal Server Error');
