@@ -10,9 +10,6 @@ const Navbar = () => {
       text: "About",
     },
     {
-      text: "Log in",
-    },
-    {
       text: "Contact",
     },
   ];
