@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import HomePage from "./Home/HomePage";
 import SideBar from "./sidebar/SideBar";
 import { initialDecks } from "./InitialData/InitialDecks";
-
+import axios from 'axios';
 function Main() {
   const [userDecks, setUserDecks] = useState([]);
   const [selectedDeck, setSelectedDeck] = useState({});
@@ -47,6 +47,7 @@ function Main() {
       id: index,
       data: selectedDeck.data,
       content: newCardList,
+
     };
 
     setSelectedDeck(updatedDeckData);
@@ -83,7 +84,9 @@ function Main() {
   //Updates the selected card to user inputs
   const updateCard = (index, front, back) => {
     const newCardData = { front: front, back: back };
-
+    axios.post("http://localhost:8081/card", front,back)
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
     const cardList = [...selectedDeck.content];
     cardList.splice(index, 1, newCardData);
 

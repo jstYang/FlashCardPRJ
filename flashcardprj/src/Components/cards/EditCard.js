@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdSwapVert } from "react-icons/md";
 import "./Card.css";
-
+import axios from 'axios';
 export default function EditCard({
   currentCard,
   setEditCard,
@@ -17,7 +17,22 @@ export default function EditCard({
     setCardFront(cardBack);
     setCardBack(frontSide);
   };
-
+  const saveCard = async () => {
+    try {
+      const response = await axios.post('http://localhost:8081/card', {
+        cardNumber: cardNumber,
+        front: cardFront,
+        back: cardBack,
+      });
+  
+      // Handle the successful response, if needed
+      console.log('Card saved successfully:', response.data);
+    } catch (error) {
+      console.error('Error saving card:', error.response?.data || error.message);
+      // Handle the error, show a user-friendly message, or retry the request
+    }
+  };
+  
   return (
     <div className="small-card">
       <div className="small-card-front">
@@ -52,6 +67,7 @@ export default function EditCard({
         <button onClick={() => setEditCard(false)}>Cancel</button>
         <button
           onClick={() => {
+            saveCard();
             setEditCard(false);
             updateCard(cardNumber, cardFront, cardBack);
           }}
