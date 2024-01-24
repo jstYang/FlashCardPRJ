@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import BannerBackground from "../Assets/home-banner-background.png";
 
-const Home = () => {
+function Home() {
   return (
     <div className="home-container">
       <Navbar />
@@ -18,6 +18,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Home;
