@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu] = useState(false);
   const menuOptions = [
     {
       text: "Home",

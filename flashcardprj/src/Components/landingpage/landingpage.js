@@ -5,15 +5,16 @@ import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-function Landingpage() {
+const landingpage = () => {
   return (
-    <div className="App">
+    <div>
+      <Navbar />
       <Home />
       <About />
       <Contact />
       <Footer />
     </div>
   );
-}
+};
 
-export default Landingpage;
+export default landingpage;
