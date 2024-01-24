@@ -10,8 +10,8 @@
 .home-page-title {
   font-size: 36px;
   font-weight: bold;
-  background: #9C00FF;
-  background: linear-gradient(to left, #9C00FF 0%, #2A0087 100%);
+  
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -19,6 +19,7 @@
 
 .selected-deck-title {
   font-size: 24px;
+  color: white;
 }
 
 .sidebar-block {
