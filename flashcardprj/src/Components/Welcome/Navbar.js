@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "../Assets/logo.png";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -11,9 +10,6 @@ const Navbar = () => {
       text: "About",
     },
     {
-      text: "Sign Up",
-    },
-    {
       text: "Log in",
     },
     {
@@ -22,16 +18,12 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <div className="nav-logo-container">
-        <img src={Logo} alt="" />
-      </div>
+      <div className="nav-logo-container"></div>
       <div className="navbar-links-container">
         <a href="">Home</a>
         <a href="">About</a>
-        <a href="">Sign in</a>
         <a href="">Contact</a>
         <a href=""></a>
-        <button className="primary-button">Get Started</button>
       </div>
     </nav>
   );
