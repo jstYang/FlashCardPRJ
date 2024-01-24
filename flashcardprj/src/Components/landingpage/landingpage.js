@@ -1,9 +1,7 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Landingpage = () => {
-  return (
-    <div>landingpage</div>
-  )
-}
+  return <div>landingpage</div>;
+};
 
-export default Landingpage
+export default Landingpage;
