@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 100%;
+  background-color: #f0f0f1;
+  color: #000000;
+  overflow-y: scroll;
+
+}
+
+.sidebar-icon-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  background-color: #2A0087;
+  color: #ffffff;
+  gap: 3%;
+}
+.sidebar-header h1{
+  background: #9C00FF;
+    background: linear-gradient(to right, #9C00FF 0%, #2A0087 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebar-icon-bar li{
+  text-decoration: none;
+  list-style: none;
+}
+
+.sidebar-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  padding-left: 64px;
+  padding-top: 16px;
+  width: 100%;
+}
+
+.sidebar-icon {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 8px;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 250%;
+ 
+  
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 60px;
+}
+
+.add-deck-button {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.deck-button {
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+.deck-data {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  
+}
+
+.deck{
+  margin-left: 30%;
+}
