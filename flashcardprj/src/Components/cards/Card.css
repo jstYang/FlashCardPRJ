@@ -108,10 +108,24 @@
   margin-top: -0.6em;
   font-family: "Roboto", sans-serif;
   gap: 2em;
+  border-radius: 100em;
+}
+
+.edit-card-buttons  button{
+ border-radius: 2em;
+ border: none;
+ width: 5em;
+ color: black;
+ height: 2em;
+}
+
+.edit-card-buttons button:hover{
+  color: white;
+  background-color: #2A0087;
 }
 
 .edit-card-input {
-  width: 200px;
+  width: 150px;
   text-align: center;
   margin-bottom: 1.5em;
 }

@@ -26,9 +26,17 @@
   font-weight: bold;
   color:black;
   width: 30%;
-  margin-bottom: 50em;
 }
 
+.add-cards-button:hover {
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #FE9E0D;
+  width: 30%;
+
+
+}
 .edit-deck {
   width: 90%;
   display: flex;
