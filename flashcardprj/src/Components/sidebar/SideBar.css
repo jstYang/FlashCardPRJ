@@ -26,9 +26,14 @@
   width: 100px;
   height: 100%;
   background-color: #2A0087;
-  /*#42006C*/
   color: #ffffff;
   gap: 3%;
+}
+.sidebar-header h1{
+  background: #9C00FF;
+    background: linear-gradient(to right, #9C00FF 0%, #2A0087 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sidebar-icon-bar li{
