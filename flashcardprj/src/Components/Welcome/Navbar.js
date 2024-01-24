@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Logo from "../Assets/logo.png";
-import { BsCart2 } from "react-icons/bs";
-import { HiOutlineBars3 } from "react-icons/hi2";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -13,13 +11,13 @@ const Navbar = () => {
       text: "About",
     },
     {
-      text: "Testimonials",
+      text: "Sign Up",
+    },
+    {
+      text: "Log in",
     },
     {
       text: "Contact",
-    },
-    {
-      text: "Cart",
     },
   ];
   return (
@@ -30,7 +28,7 @@ const Navbar = () => {
       <div className="navbar-links-container">
         <a href="">Home</a>
         <a href="">About</a>
-        <a href="">Testimonials</a>
+        <a href="">Sign in</a>
         <a href="">Contact</a>
         <a href=""></a>
         <button className="primary-button">Get Started</button>
