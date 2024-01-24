@@ -75,7 +75,7 @@
   flex-direction: column;
   width: 600px;
   height: 400px;
-  background-color: #273258;
+  background-color: #2A0087;
   margin: 1em;
   border-radius: 24px;
   justify-content: space-between;
@@ -105,7 +105,7 @@
 
 .edit-card-buttons {
   display: flex;
-  margin-bottom: 0.5em;
+  margin-top: -0.6em;
   font-family: "Roboto", sans-serif;
   gap: 2em;
 }

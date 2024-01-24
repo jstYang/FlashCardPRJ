@@ -22,7 +22,9 @@ export default function EditCard({
     <div className="small-card">
       <div className="small-card-front">
         <p className="edit-card-side-choice">Front</p>
+       
         <input
+          
           className="edit-card-input"
           type="text"
           value={cardFront}
@@ -39,6 +41,7 @@ export default function EditCard({
       <div className="small-card-back">
         <p className="edit-card-side-choice">Back</p>
         <input
+   
           className="edit-card-input"
           type="text"
           value={cardBack}
