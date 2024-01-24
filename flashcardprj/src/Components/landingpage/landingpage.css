@@ -72,13 +72,13 @@ nav {
 
 .primary-heading {
   font-size: clamp(1rem, 4vw, 5rem);
-  display: flex;
   color: white;
   line-height: 5rem;
-  max-width: 600px;
-  text-align: right;
-  margin-left: 750px;
-  margin-top: 10px;
+  max-width: 900px;
+  text-align: left;
+  margin-left: 310px;
+  margin-top: 200px;
+  
 }
 
 .about-section-container {
