@@ -7,7 +7,7 @@
   font-size: 16px;
   width: 300px;
   height: 250px;
-  margin-left: 80px;
+  margin-left: 170px;
   margin-top: 8px;
   border-radius: 8px;
   box-shadow: 2px 1px 1px rgb(209, 209, 209);
@@ -47,6 +47,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+ 
 }
 
 .edit-button {
@@ -106,12 +107,13 @@
   display: flex;
   margin-bottom: 0.5em;
   font-family: "Roboto", sans-serif;
+  gap: 2em;
 }
 
 .edit-card-input {
   width: 200px;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .result-icon {
@@ -141,6 +143,19 @@ input {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.buttonCards1, .buttonCards2{
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  margin: auto;
+  width: 200px;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  gap:2em;
+  margin-bottom: 1em;
 }
 
 .buttonCards:hover {

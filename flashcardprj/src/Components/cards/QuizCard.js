@@ -93,7 +93,7 @@ export default function QuizCard({
             style={{'marginBottom': '20px'}}
             value={userAnswer}
             onChange={(e) => setUserAnswer(e.target.value)}/>
-            <button className="buttonCards" onClick={() => checkUserAnswer(userAnswer)}>
+            <button className="buttonCards1" onClick={() => checkUserAnswer(userAnswer)}>
             Check My Answer</button>
           </>
           )}
@@ -105,7 +105,7 @@ export default function QuizCard({
             <h5>Your final score is: {points}</h5>
             <button onClick={reset} className="buttonCards">Retake Test</button>
           </div>)}
-            <button className="buttonCards" onClick={() => {
+            <button className="buttonCards2" onClick={() => {
               reset();
               setKnowledgeTest(false);
               }}
