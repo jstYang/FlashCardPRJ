@@ -1,3 +1,3 @@
-Avellana, Dorotthea - Frontend/backend Developer
-Balanga, Kristan Lloyd - frontend/Backend DEveloper
-Cayco, Shekainah Marie- Frontend/backend Developer
+Avellana, Dorotthea - Frontend/Backend Developer
+Balanga, Kristan Lloyd - Frontend/Backend Developer
+Cayco, Shekainah Marie- Frontend/Backend Developer
