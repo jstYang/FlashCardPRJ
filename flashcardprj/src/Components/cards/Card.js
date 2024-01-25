@@ -3,6 +3,7 @@ import { GoTrash } from "react-icons/go";
 import { GrEdit } from "react-icons/gr";
 import EditCard from "./EditCard";
 import "./Card.css";
+import axios from 'axios';
 
 export default function Card({
   currentCard,
@@ -17,6 +18,15 @@ export default function Card({
   const editToggle = () => {
     setEditCard(!editCard);
   };
+  const removeCard = () => {
+    axios.delete(`http://localhost:8081/cards/${currentCard.id}`)
+      .then(res => {
+        console.log(res);
+        deleteCard(cardNumber);
+        setEditCard(false);
+      })
+      .catch(err => console.log(err))
+  };
 
   return (
     <div className="card-section">
@@ -27,6 +37,7 @@ export default function Card({
             <GoTrash
               className="delete-button"
               onClick={() => {
+                removeCard(currentCard);
                 setCardSide("front");
                 deleteCard(currentCard);
               }}

@@ -47,6 +47,7 @@ function Main() {
       id: index,
       data: selectedDeck.data,
       content: newCardList,
+
     };
 
     setSelectedDeck(updatedDeckData);

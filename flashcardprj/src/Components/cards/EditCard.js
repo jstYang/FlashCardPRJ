@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MdSwapVert } from "react-icons/md";
 import "./Card.css";
+import axios from 'axios';
 
 export default function EditCard({
   currentCard,
@@ -18,6 +19,12 @@ export default function EditCard({
     setCardBack(frontSide);
   };
 
+  const saveCard = () => {
+    axios.post("http://localhost:8081/cards", { front: cardFront, back: cardBack })
+      .then(res => console.log(res))
+      .catch(err => console.log(err))
+  };
+  
   return (
     <div className="small-card">
       <div className="small-card-front">
@@ -52,6 +59,7 @@ export default function EditCard({
         <button onClick={() => setEditCard(false)}>Cancel</button>
         <button
           onClick={() => {
+            saveCard();
             setEditCard(false);
             updateCard(cardNumber, cardFront, cardBack);
           }}
