@@ -158,7 +158,10 @@ input {
   border-radius: 20px;
   cursor: pointer;
 }
-
+.selected-deck-title {
+  font-size: 24px;
+  color:black;
+}
 .buttonCards1, .buttonCards2{
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
