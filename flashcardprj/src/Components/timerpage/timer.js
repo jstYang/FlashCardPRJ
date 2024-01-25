@@ -40,7 +40,7 @@ function Timer() {
       })}`}</p>
       <button onClick={toggleTimer}>{isActive ? "Pause" : "Start"}</button>
       <button onClick={resetTimer}>Reset</button>
-      <Link to='/' style={{ color: 'whitesmoke', textDecoration: 'underline' }}>Back to main page</Link>
+      <Link to='/' style={{ background: 'white', color: 'black', borderRadius: '8px'}}>Back to main page</Link>
     </div>
   );
 }
