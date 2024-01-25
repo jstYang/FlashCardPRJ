@@ -4,11 +4,18 @@ body {
     font-family: 'Arial', sans-serif;
     display: flex;
     align-items: center;
+    background: linear-gradient(#2a0087, #42006c);
     justify-content: center;
     height: 100vh;
     margin: 0;
   }
-  
+
+  h1{
+    color: whitesmoke;
+  }
+  p{
+    color: whitesmoke;
+  }
   .timer-container {
     text-align: center;
   }

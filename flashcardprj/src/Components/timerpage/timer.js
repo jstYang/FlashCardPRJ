@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './timer.css';
+import { Link } from "react-router-dom";
 
 function Timer() {
   const [seconds, setSeconds] = useState(1500); // 25 minutes in seconds
@@ -39,6 +40,7 @@ function Timer() {
       })}`}</p>
       <button onClick={toggleTimer}>{isActive ? "Pause" : "Start"}</button>
       <button onClick={resetTimer}>Reset</button>
+      <Link to='/' style={{ color: 'whitesmoke', textDecoration: 'underline' }}>Back to main page</Link>
     </div>
   );
 }
