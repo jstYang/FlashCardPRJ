@@ -34,9 +34,13 @@ function Landingpage() {
         </div>
         <div className="about-section-text-container">
           <h1 className="about-primary-heading">
-            FlashFocus is an intuitive and beginner-friendly flashcard
-            productivity tool for studying designed to simplify the learning
-            experience for users entering the world of online education.
+                FlashFocus serves as an intuitive and user-friendly flashcard productivity tool tailored
+                for students, specifically designed to streamline and enhance the learning journey for
+                individuals venturing into the realm of online education. With its user-centric
+                approach, this tool aims to simplify the studying process, providing a seamless
+                experience for beginners who are navigating the complexities of online learning. If
+                you're ready to embark on your educational journey with greater ease and efficiency,
+                it's time to take the first step
               </h1>
               
       <Link to={"/main"} style={{ textDecoration: "none", color: "white" }}> <button className="secondary-button">

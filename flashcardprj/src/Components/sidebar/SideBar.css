@@ -25,13 +25,13 @@
   align-items: center;
   width: 100px;
   height: 100%;
-  background-color: #2A0087;
+  background-color: #9900FC;
   color: #ffffff;
   gap: 3%;
 }
 .sidebar-header h1{
   background: #9C00FF;
-    background: linear-gradient(to right, #9C00FF 0%, #2A0087 100%);
+  background: linear-gradient(to right, #9C00FF 0%, #2A0087 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
