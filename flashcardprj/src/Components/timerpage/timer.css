@@ -14,7 +14,7 @@ body {
     color: whitesmoke;
   }
   p{
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
   }
   .timer-container {
     text-align: center;

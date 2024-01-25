@@ -34,10 +34,10 @@ function Timer() {
   return (
     <div>
       <h1>Pomodoro Timer</h1>
-      <p>{`${Math.floor(seconds / 60)}:${(seconds % 60).toLocaleString("en-US", {
+      <h1>{`${Math.floor(seconds / 60)}:${(seconds % 60).toLocaleString("en-US", {
         minimumIntegerDigits: 2,
         useGrouping: false,
-      })}`}</p>
+      })}`}</h1>
       <button onClick={toggleTimer}>{isActive ? "Pause" : "Start"}</button>
       <button onClick={resetTimer}>Reset</button>
       <Link to='/' style={{ background: 'white', color: 'black', borderRadius: '8px'}}>Back to main page</Link>

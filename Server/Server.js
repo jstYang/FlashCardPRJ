@@ -40,7 +40,19 @@ app.post('/cards', (req, res) => {
   });
 });
 
+app.delete("/cards", (req, res) => {
+  const deleteQuery = "DELETE FROM cards"; // Adjust the query based on your table structure
 
+  db.query(deleteQuery, (err, result) => {
+    if (err) {
+      console.error("Error deleting cards:", err);
+      res.status(500).send("Internal Server Error");
+    } else {
+      console.log("Deleted cards successfully");
+      res.status(200).send("Cards deleted successfully");
+    }
+  });
+});
 
 app.listen("8081", () => {
   console.log("Server is successfully running on port 8081");
