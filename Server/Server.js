@@ -42,8 +42,8 @@ app.post('/cards', (req, res) => {
 
 app.delete("/cards", (req, res) => {
   const deleteQuery = "DELETE FROM cards"; // Adjust the query based on your table structure
-
-  db.query(deleteQuery, (err, result) => {
+  const altertable = "ALTER TABLE cards AUTO_INCREMENT = 1";
+  db.query(deleteQuery,altertable, (err, result) => {
     if (err) {
       console.error("Error deleting cards:", err);
       res.status(500).send("Internal Server Error");
