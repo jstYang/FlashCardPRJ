@@ -63,7 +63,7 @@ export default function HomePage({
       {quizMode === false ? (
         <div className="no-quiz">
           <h1 className="home-page-title">Home Page</h1>
-          <p>Select a deck to get started!</p>
+          <p color='whitesmoke'>Select a deck to get started!</p>
         </div>
       ) : (
         <div>
@@ -139,4 +139,3 @@ export default function HomePage({
     </div>
   );
 }
-
