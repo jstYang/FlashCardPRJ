@@ -9,10 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Main />}></Route>
-        <Route path='/timer' element={<Timer />}></Route>
-   
-        
-        
+        <Route path='/time' Component={<Timer/>}></Route>
       </Routes>
     </BrowserRouter>
   );
